@@ -389,21 +389,21 @@ img {
 
 /* Javascript */
 .js [data-slide] {
-	position: relative
+	position: relative;
 }
+  
 .js [data-slide] > * {
 	position: absolute;
-	top: 0;
+	top: 0px;
 	opacity: 0;
-	pointer-events: none;
 }
+  
 .js [data-slide] > .active {
-	position:relative;
-	opacity:1;
-	transition: opacity .5s;
-	z-index:1;
-	pointer-events:auto;
-}
+	position: relative;
+	opacity: 1;
+	transition: opacity 500ms;
+} 
+
 .js [data-slide-nav] {
 	display: block;
 	text-align: center;
@@ -417,11 +417,27 @@ img {
 	border: none;
 	padding: 0px;
 	border-radius: 6px;
-	text-indent: -99;
+	text-indent: -99px;
 	overflow: hidden;
+	outline: 0;
+	cursor: pointer;
 	background: #1d1d1d;
 }
 
 .js [data-slide-nav] button.active {
 	background: #fec63e;
+}
+
+.js [data-anime] {
+	opacity: 0;
+}
+
+.js .fadeInDown {
+	transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+	opacity: 1;
+	transform: none;
+	transition: opacity 800ms, transform 800ms;
 }
