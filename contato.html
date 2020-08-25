@@ -40,20 +40,22 @@
 
     <!-- #region orçamento -->
     <section data-anime="1200" class="contato container fadeInDown">
-        <form action="" id="form_contato" class="contato_form grid-8">
+        <form action="" id="form_contato" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
             <label for="nome">Name</label>
-            <input type="text" id="name">
-
+            <input type="text" id="name" name="nome" required>
             <label for="email">Email</label>
-            <input type="email" id="email">
-
+            <input type="email" id="email" name="email" required>
             <label for="telefone">Telefone</label>
-            <input type="text" id="telefone">
+            <input type="text" id="telefone" name="telefone">
 
-            <label for="espec">Especificações</label>
-            <textarea id="espec"></textarea>
+            <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+            <input type="text" class="nao-aparece" name="leaveblank">
+            <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+            <input type="text" class="nao-aparece" name="dontchange" value="http://">
 
-            <button type="submit" class="btn btn-black">Enviar</button>
+            <label for="mensagem">Especificações</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button id="enviar" name="enviar" type="submit" class="btn btn-black">Enviar</button>
         </form>
         <div class="contato_dados grid-8">
             <h3>Dados</h3>
@@ -144,6 +146,7 @@
     </footer>
     <!-- #endregion -->
 
+    <script src="./js/simple-form.js"></script>
     <script src="./js/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 
