@@ -2,15 +2,21 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contato.css">
-    <link rel="stylesheet" href="./css/responsivo.css">
-    <script>document.documentElement.classList.add("js");</script>
     <title>Bikcraft - Contato</title>
+    <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte.">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Bikcraft - Contato"/>
+    <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."/>
+    <meta property="og:url" content=""/><!-- Por o link na nuvem -->
+    <meta property="og:image" content=""/><!-- Por o link da nuven -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_compress.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
     <!-- #region Header -->
@@ -40,9 +46,9 @@
 
     <!-- #region orçamento -->
     <section data-anime="1200" class="contato container fadeInDown">
-        <form action="" id="form_contato" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
-            <label for="nome">Name</label>
-            <input type="text" id="name" name="nome" required>
+        <form id="form_contato" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
             <label for="telefone">Telefone</label>
@@ -86,19 +92,19 @@
     <!-- #endregion -->
 
     <!-- #region Mapa -->
-    <section class="container contato_mapa">
-        <a href="http://google.com" terget="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
-    </section>
+    <div class="container contato_mapa">
+        <a href="http://google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
+    </div>
 
     <!-- #endregion -->
 
     <!-- #region Quebra -->
-    <section class="quebra">
+    <div class="quebra">
         <blockquote class="quote-externo container">
             <p>"o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana."</p>
             <cite>WILLIAM MORRIS</cite>
         </blockquote>
-    </section>
+    </div>
     <!-- #endregion -->
     <!-- #region Footer -->
     <footer>
@@ -106,7 +112,7 @@
             <div class="container">
                 <div class="grid-8 footer_historia">
                     <h3>Nossa História</h3>
-                    <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por dodos os detalhes da vida cotidiana cotidiana</p>
+                    <p>Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p>
                 </div>
                 <div class="grid-4 footer_contato">
                     <h3>Contato</h3>
